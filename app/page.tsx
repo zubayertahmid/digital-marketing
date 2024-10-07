@@ -308,7 +308,7 @@ export default function Home() {
       </Element>
 
       <section className="py-20">
-        <ScrollBasedVelocityDemo />
+        
       </section>
 
       <Element name="process">
