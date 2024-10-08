@@ -83,41 +83,70 @@ export default function Home() {
         </Link>
 
         <div className="absolute right-1/2 translate-x-1/2 transform">
-          <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
-            <Link href={"/showcase"} className="hover:text-blue-500">
-              Showcase
-            </Link>
+  <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
+    
+    <ScrollLink
+      to="services"
+      smooth={true}
+      className="
+        text-gray-700 
+        font-medium 
+        transition 
+        duration-200 
+        px-4 py-2
+        rounded-[6px]
+        hover:bg-[#ef4444]
+        hover:text-white
+        hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]
+      "
+    >
+      Services
+    </ScrollLink>
 
-            <ScrollLink
-              to="services"
-              smooth={true}
-              className="hover:text-blue-500"
-            >
-              Services
-            </ScrollLink>
+    <ScrollLink
+      to="process"
+      smooth={true}
+      className="
+        text-gray-700 
+        font-medium 
+        transition 
+        duration-200 
+        px-4 py-2
+        rounded-[6px]
+        hover:bg-[#ef4444]
+        hover:text-white
+        hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]
+      "
+    >
+      Process
+    </ScrollLink>
 
-            <ScrollLink
-              to="process"
-              smooth={true}
-              className="hover:text-blue-500"
-            >
-              Process
-            </ScrollLink>
+    <ScrollLink
+      to="guarentees"
+      smooth={true}
+      className="
+        text-gray-700 
+        font-medium 
+        transition 
+        duration-200 
+        px-4 py-2
+        rounded-[6px]
+        hover:bg-[#ef4444]
+        hover:text-white
+        hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]
+      "
+    >
+      Guarantees
+    </ScrollLink>
+    
+  </div>
+</div>
 
-            <ScrollLink
-              to="guarentees"
-              smooth={true}
-              className="hover:text-blue-500"
-            >
-              Guarentees
-            </ScrollLink>
-          </div>
-        </div>
 
         <div className="flex items-center gap-x-4">
           <a href="tel:519400200" className="hidden lg:flex">
             <button className="px-4 py-2 rounded-md flex items-center gap-x-3">
-              (519)-400-200
+              
             </button>
           </a>
 
@@ -127,7 +156,7 @@ export default function Home() {
   py-3 
   px-6
   text-lg 
-  hover:bg-[#abcbff]
+  hover:bg-[#ef4444]
   rounded-[6px]
   border-2
   border-black
@@ -171,7 +200,7 @@ export default function Home() {
             px-10
             md:px-16
       md:text-xl
-      hover:bg-[#abcbff] 
+      hover:bg-[#ef4444] 
       rounded-[6px]
       border-2 
       border-black 
@@ -184,34 +213,14 @@ export default function Home() {
             >
               Book a Call
             </Link>
-            <Link
-              href={"/showcase"}
-              className="
-              bg-white
-   py-3 
-   px-10
-   md:px-16
-      md:text-xl
-        border-4
-        border-black
-        rounded-[6px]
-        hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)]"
-            >
-              Showcase
-            </Link>
+            
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center text-left md:justify-items-center md:mx-auto mt-10 md:mt-16">
             <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
               <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
                 <PiCheckBold className="text-xl text-blue-500" />
-                Design
-              </p>
-            </BoxReveal>
-            <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
-              <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
-                <PiCheckBold className="text-xl text-blue-500" />
-                Development
+                Branding
               </p>
             </BoxReveal>
             <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
@@ -226,6 +235,12 @@ export default function Home() {
                 Strategy
               </p>
             </BoxReveal>
+            <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
+              <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
+                <PiCheckBold className="text-xl text-blue-500" />
+                Optimization
+              </p>
+            </BoxReveal>
           </div>
 
           <div className="md:flex items-center justify-between gap-y-4 my-10 gap-x-28 mx-auto">
@@ -237,7 +252,7 @@ export default function Home() {
               <div className="flex my-6 gap-x-5 w-full">
                 <div>
                   <h1 className="text-blue-500 text-3xl md:text-5xl">
-                    <NumberTicker value={1000} /> +
+                    <NumberTicker value={100} /> +
                     <p className="text-gray-500 text-sm md:text-md">
                       Happy Clients
                     </p>
@@ -248,7 +263,7 @@ export default function Home() {
 
                 <div className="flex-1 min-w-0">
                   <h1 className="text-blue-500 text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
-                    <NumberTicker value={100} /> +
+                    <NumberTicker value={10} /> +
                     <p className="text-gray-500 text-sm md:text-md">
                       Projects Completed
                     </p>
@@ -283,7 +298,7 @@ export default function Home() {
           <WordPullUpDemo />
         </h1>
         <p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
-        All of our services are designed to help your business stand out 
+        All of our services are designed to help your business stand out  
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
@@ -315,7 +330,7 @@ export default function Home() {
         <main className="md:px-0 mx-6 md:mx-auto">
         <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
         Our{" "}
-            <span className="text-blue-500 flex gap-x-1 items-center">
+            <span className="text-[#ef4444] flex gap-x-1 items-center">
               {" "}
               <Image
                 src={"/icons/squiggle.svg"}
@@ -407,10 +422,10 @@ export default function Home() {
               alt="image"
             />{" "}
           </h1>
-          <p className="text-left  text-xl  text-gray-500">519-200-5000</p>
-          <p className="text-left  text-xl  text-gray-500">
-            admin@birdsoftware.ca
-          </p>
+          <p className="text-left  text-xl  text-gray-500">+8801610608881</p>
+        <p className="text-left  text-xl  text-gray-500">
+          services@madestic.com
+        </p>
         </div>
 
         <div className="flex md:justify-center gap-x-4 mt-10">

@@ -6,20 +6,20 @@ import Image from "next/image";
 const features = [
   {
     icon: "/icons/fast.svg",
-    title: "Fast Delivery",
+    title: "Fast Turnaround Time",
     description:
-      "1-2 weeks delivery for most projects. Call us for more information.",
+      "We deliver quickly without compromising quality",
   },
   {
     icon: "/icons/design.svg",
-    title: "Design & Development",
+    title: "Tailored Campaign",
     description:
-      "We design and develop your website with the latest technologies and trends.",
+      "We design custom solutions for your brand and audience",
   },
   {
     icon: "/icons/scalable.svg",
-    title: "Scalability + Maintenance ",
-    description: "We offer maintenance and scalability for all websites.",
+    title: "Scalar Campaigns",
+    description: "We create campaigns that grow with your business",
   },
   {
     icon: "/icons/team.svg",
@@ -28,20 +28,20 @@ const features = [
   },
   {
     icon: "/icons/safe.svg",
-    title: "Secure Building",
+    title: "Targeted Audience Engagement",
     description:
-      "Safe and secure building practices. To ensure your data is safe.",
+      "We reach your ideal audience with precision marketing",
   },
   {
     icon: "/icons/analytics.svg",
     title: "Analytics Tracking",
-    description: "Track your progress with our built in analytics",
+    description: "Track your progress with our analytical reports",
   },
 
   {
     icon: "/icons/flexible.svg",
-    title: "Dynamic Websites",
-    description: "We build dynamic solutions that are easy to manage.",
+    title: "Constant Optimization",
+    description: "We constantly optimize for sustained growth and success",
   },
   {
     icon: "/icons/support.svg",
@@ -52,7 +52,7 @@ const features = [
   {
     icon: "/icons/money.svg",
     title: "Affordable Pricing",
-    description: "Affordable pricing for all our clients.",
+    description: "We deliver maximum result with minimum cost",
   },
 ];
 
