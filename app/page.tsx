@@ -19,41 +19,45 @@ import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen
 
 
 const services = [
+  
   {
-    icon: "/images/s_6.png",
-    title: "Web Design + Development",
+    icon: "/images/s_3.png",
+    title: "Social Media Marketing",
     description:
-      "Take your business to the next level with our web design and development services",
+      "Boost your brand's online presence with our social media marketing services",
   },
+
   {
     icon: "/images/s_1.png",
     title: "Search Engine Optimization",
     description:
       "Get your website to the top of search engine results with our SEO services",
   },
+
   {
     icon: "/images/s_5.png",
     title: "Content Creation",
     description:
-      "Boost your brand's online presence with our social media marketing services",
+      "With our content creation services, we help business drive results",
   },
   {
-    icon: "/images/s_3.png",
-    title: "Social Media Marketing",
+    icon: "/images/s_6.png",
+    title: "Web Design + Development",
     description:
-      "Interact with your customers and increase sales with our email marketing services",
+      "Take your business to the next level with our web design and development services",
   },
+  
   {
     icon: "/images/s_4.png",
     title: "Email Marketing",
     description:
-      "With our content creation services, we help businesses drive results",
+      "Interact with your customers and increase sales with our email marketing services",
   },
   {
     icon: "/images/s_2.png",
-    title: "Pay-Per-Click Advertising",
+    title: "Pitch Deck Design",
     description:
-      "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
+      "With our compelling pitch decks, you'll win over investors and stakeholders",
   },
 ];
 
